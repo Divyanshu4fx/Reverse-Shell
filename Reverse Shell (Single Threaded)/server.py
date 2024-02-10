@@ -1,5 +1,7 @@
 import socket
 import sys
+
+#Creating socket to start server
 def create_socket():
     try:
         global host
@@ -15,6 +17,7 @@ def create_socket():
     except socket.error as msg:
         print("Socket error :"+ str(msg))
 
+#Binding a port to the socket
 def bind_socket():
     try:
         server.bind((host,port))
@@ -26,6 +29,7 @@ def bind_socket():
         print("Trying again...")
         bind_socket()
 
+#Method to send command to remote client
 def send_command(conn):
     while True:
         cmd=input("> ")
@@ -42,6 +46,7 @@ def send_command(conn):
         response=conn.recv(1024).decode("utf-8")
         print(response,end="")
 
+#accepting scoket connection here
 def accept_socket():
     print("Listenig for connection...")
     conn,address=server.accept()

