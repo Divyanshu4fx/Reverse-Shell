@@ -1,4 +1,4 @@
-# Remote Shell Access Tool
+# Reverse Remote Shell Access Tool
 
 This repository contains code for a simple remote shell access tool implemented in Python using sockets. The tool consists of two scripts, one for the server-side and one for the client-side.
 
@@ -14,9 +14,9 @@ This repository contains code for a simple remote shell access tool implemented 
 - It provides a simple shell interface for interacting with the server remotely.
 
 ## Usage
-1. Run the server script on the machine you want to control remotely.
-2. Run the client script on the machine from which you want to control the server.
-3. Enter commands on the client-side terminal to execute them remotely on the server.
+1. Run the client script on the machine you want to control remotely.
+2. Run the server script on the machine from which you want to control the client.
+3. Enter commands on the server-side terminal to execute them remotely on the client.
 4. Use `quit` command to exit the program.
 
 ## Note
