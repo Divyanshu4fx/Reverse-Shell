@@ -1,6 +1,6 @@
 # Reverse Remote Shell Access Tool
 
-This repository contains code for a simple remote shell access tool implemented in Python using sockets. The tool consists of two scripts, one for the server-side and one for the client-side.
+A simple remote shell access tool implemented in Python using sockets. The tool consists of two scripts, one for the server-side and one for the client-side.
 
 ## Server Side
 - The server script (`server.py`) creates a socket and listens for incoming connections.
